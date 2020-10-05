@@ -8,7 +8,7 @@ When running the official image in EC2 containers, the mounted volume in EFS was
 As the _Jira_ server image worked fine in Fargate with EFS, this image uses the same user and group id approach; specifying a linux UID and GID (2001).  The official image does not specify a UID or GID, and consequently UID and GID 1000 is used.  This appears to be related to the issue of no files being written to in AWS EFS.
 
 ## Run
-Refer to the official documentation [here](https://hub.docker.com/r/atlassian/bamboo-server) on how to run the image, as inputs are identical.
+See this images docker hub page [here](https://hub.docker.com/r/paulmharwood/atlassian-bamboo-efs).  Refer to the official documentation [here](https://hub.docker.com/r/atlassian/bamboo-server) on how to run the image, as inputs are identical.
 
 ## Build
 To build the docker image, specify the required bamboo version as an argument:
