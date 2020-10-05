@@ -11,7 +11,7 @@ As the _Jira_ server image worked fine in Fargate with EFS, this image uses the 
 Refer to the official documentation [here](https://hub.docker.com/r/atlassian/bamboo-server) on how to run the image, as inputs are identical.
 
 ## Build
-To build the docker image, specify the required bamboo version as a argument:
+To build the docker image, specify the required bamboo version as an argument:
 ```
 docker build --build-arg BAMBOO_VERSION=7.0.6 . 
 ```
